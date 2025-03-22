@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday SATISH! 🎉</title>
+  <style>
+    :root {
+      --primary-color: #ff0066;
+      --secondary-color: #ff66cc;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #ffcccc, #ffe6e6);
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    .header {
+      margin: 30px 0;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .header h1 {
+      font-size: 3.5em;
+      color: var(--primary-color);
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+      margin: 20px 0;
+      position: relative;
+      display: inline-block;
+    }
+
+    .header h1::after {
+      content: '🎉';
+      position: absolute;
+      right: -40px;
+      top: -20px;
+      font-size: 0.8em;
+      animation: rotate 2s linear infinite;
+    }
+
+    .cake-image {
+      width: min(90%, 400px);
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      transform: scale(1);
+      transition: transform 0.3s ease;
+      margin: 20px auto;
+    }
+
+    .cake-image:hover {
+      transform: scale(1.05);
+    }
+
+    .message {
+      font-size: 1.4em;
+      color: #333;
+      margin: 40px auto;
+      padding: 20px;
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      line-height: 1.7;
+    }
+
+    .message p {
+      margin: 15px 0;
+    }
+
+    .balloon {
+      position: fixed;
+      width: 80px;
+      height: auto;
+      animation: float linear infinite;
+      opacity: 0.9;
+      z-index: 999;
+      pointer-events: none;
+      bottom: -100px;
+    }
+
+    @keyframes float {
+      0% { 
+        transform: translateY(0) rotate(-5deg);
+        opacity: 1;
+      }
+      100% { 
+        transform: translateY(-150vh) rotate(5deg);
+        opacity: 0.5;
+      }
+    }
+
+    .birthday-boy {
+      margin: 30px auto;
+      max-width: 250px;
+      border-radius: 15px;
+      position: relative;
+      animation: floatImage 3s ease-in-out infinite;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .birthday-boy img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      border: 4px solid #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .birthday-boy:hover img {
+      transform: scale(1.05);
+    }
+
+    .birthday-boy::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      border-radius: 20px;
+      background: linear-gradient(45deg, #ffd700, #ffaa00);
+      z-index: -1;
+      animation: glow 2s ease-in-out infinite;
+    }
+
+    @keyframes floatImage {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+    }
+
+    @keyframes glow {
+      0% { opacity: 0.8; }
+      50% { opacity: 0.4; }
+      100% { opacity: 0.8; }
+    }
+
+    .birthday-name {
+      font-family: 'Brush Script MT', cursive;
+      color: #ff0066;
+      font-size: 2em;
+      margin: 15px 0;
+      text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+    }
+
+    .confetti {
+      position: fixed;
+      width: 12px;
+      height: 12px;
+      background: var(--secondary-color);
+      animation: fall linear infinite;
+      opacity: 0.8;
+      z-index: 9999;
+      border-radius: 50%;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+    }
+
+    .confetti:nth-child(2n) { background: #66ccff; }
+    .confetti:nth-child(3n) { background: #ffff66; }
+    .confetti:nth-child(4n) { background: #66ff66; }
+
+    .heart {
+      color: var(--primary-color);
+      animation: heartbeat 1.2s infinite;
+      display: inline-block;
+    }
+
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      15% { transform: scale(1.3); }
+      30% { transform: scale(1); }
+      45% { transform: scale(1.15); }
+      60% { transform: scale(1); }
+    }
+
+    .signature {
+      font-style: italic;
+      color: var(--primary-color);
+      margin-top: 30px;
+      font-weight: bold;
+      font-size: 1.2em;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2.5em;
+      }
+      .message {
+        font-size: 1.2em;
+        padding: 15px;
+        margin: 20px;
+      }
+      .cake-image {
+        width: 85%;
+      }
+      .signature {
+        font-size: 1em;
+      }
+      .birthday-name {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Happy Birthday SATISH!</h1>
+  </div>
+
+  <!-- Birthday Boy Section -->
+  <div class="birthday-boy">
+    <img src="https://i.ibb.co/4Rtt9kWP/birthday-boy.jpg" alt="Birthday Boy Satish">
+  </div>
+  <div class="birthday-name">SATISH</div>
+
+  <img src="https://i.ibb.co/5XTVs3WJ/cake.jpg" alt="Birthday Cake" class="cake-image">
+
+  <div class="message">
+    <p>🎂 May your day be filled with love, joy, and endless celebrations! 🎈</p>
+    <p>Wishing you a year ahead full of success and happiness! <span class="heart">❤️</span></p>
+    <p>Cheers to you today and always! 🥂</p>
+    <span class="signature">With warm wishes from Ramkaran Yadav Ji</span>
+  </div>
+
+  <script>
+    function createConfetti() {
+      const confettiCount = 100;
+      for (let i = 0; i < confettiCount; i++) {
+        const confetti = document.createElement('div');
+        confetti.classList.add('confetti');
+        confetti.style.left = Math.random() * window.innerWidth + 'px';
+        confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
+        confetti.style.animationDelay = Math.random() * 2 + 's';
+        confetti.style.opacity = Math.random() * 0.5 + 0.5;
+        confetti.style.transform = `scale(${Math.random() * 0.5 + 0.5})`;
+        document.body.appendChild(confetti);
+      }
+    }
+
+    function createBalloons() {
+      const balloonImages = [
+        'https://i.ibb.co/6QfgVv4/balloon.png',
+        'https://i.ibb.co/xqqGFyks/balloon1.png'
+      ];
+      
+      const balloonCount = 20;
+      for (let i = 0; i < balloonCount; i++) {
+        const balloon = document.createElement('img');
+        balloon.classList.add('balloon');
+        balloon.src = balloonImages[Math.floor(Math.random() * balloonImages.length)];
+        balloon.style.left = Math.random() * (window.innerWidth - 100) + 'px';
+        const duration = Math.random() * 4 + 8;
+        balloon.style.animation = `float ${duration}s linear infinite`;
+        balloon.style.animationDelay = Math.random() * 3 + 's';
+        balloon.alt = "Birthday Balloon";
+        document.body.appendChild(balloon);
+      }
+    }
+
+    window.onload = () => {
+      createConfetti();
+      createBalloons();
+    };
+  </script>
+
+
+</body></html>
